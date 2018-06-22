@@ -9,7 +9,7 @@ import (
 	"strconv"
 )
 
-var ipv4_matcher = regexp.MustCompile(`[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}`)
+var ipv4_matcher = regexp.MustCompile(`[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$`)
 var subaddr_matcher = regexp.MustCompile(`[0-9]{1,3}`)
 
 type IPv4Addr struct {
